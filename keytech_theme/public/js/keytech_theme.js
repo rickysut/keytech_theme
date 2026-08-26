@@ -347,7 +347,7 @@ class KeytechDeskTheme {
 			"--bt-login-box-bg", "--bt-login-box-position", "--bt-login-box-top",
 			"--bt-login-box-border-radius", "--bt-login-box-padding",
 			"--bt-login-box-left", "--bt-login-box-right", "--bt-login-box-bg-override",
-			"--bt-login-box-width",
+			"--bt-login-box-width", "--bt-login-box-border", "--bt-login-card-border",
 			"--bt-login-title-display", "--bt-login-title-content", "--bt-login-title-color",
 			"--bt-carousel-fade-opacity", "--bt-carousel-bg-image",
 			"--bt-footer-bg", "--bt-footer-color", "--bt-footer-border",
@@ -591,6 +591,8 @@ class KeytechDeskTheme {
 			root.style.setProperty("--bt-login-box-top", "26%");
 			root.style.setProperty("--bt-login-box-border-radius", "10px");
 			root.style.setProperty("--bt-login-box-padding", "18px 40px 40px 40px");
+			root.style.setProperty("--bt-login-box-border", "2px solid " + (t.login_box_background_color || "#c7c7c7"));
+			root.style.setProperty("--bt-login-card-border", "none");
 			if (t.login_box_background_color) {
 				root.style.setProperty("--bt-login-box-bg-override", t.login_box_background_color);
 			}
