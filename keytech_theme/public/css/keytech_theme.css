@@ -141,7 +141,7 @@ body.kt-sidebar-collapsed #kt-sidebar {
     padding: 10px 16px !important;
     color: var(--text-muted) !important;
     text-decoration: none !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     font-weight: 500 !important;
     transition: all 0.2s !important;
     gap: 10px !important;
@@ -271,7 +271,7 @@ body.kt-sidebar-collapsed #kt-sidebar .kt-sidebar-badge {
 
 #kt-sidebar .kt-sidebar-children .kt-sidebar-link {
     padding: 8px 16px 8px 30px !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
 }
 
 #kt-sidebar .kt-sidebar-children .kt-sidebar-children .kt-sidebar-link {
@@ -323,7 +323,7 @@ body.kt-sidebar-collapsed #kt-sidebar .kt-sidebar-badge {
 }
 
 #kt-sidebar .kt-sidebar-user-name {
-    font-size: 13px !important;
+    font-size: 14px !important;
     font-weight: 500 !important;
     color: var(--text-color) !important;
     white-space: nowrap !important;
