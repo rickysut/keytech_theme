@@ -26,8 +26,14 @@ app_license = "mit"
 import time
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/keytech_theme/css/keytech_theme.css?v={}".format(time.time())
-app_include_js = "/assets/keytech_theme/js/keytech_theme.js?v={}".format(time.time())
+app_include_css = [
+	"/assets/keytech_theme/css/keytech_theme.css?v={}".format(time.time()),
+	"/assets/keytech_theme/css/language_switcher.css?v={}".format(time.time()),
+]
+app_include_js = [
+	"/assets/keytech_theme/js/keytech_theme.js?v={}".format(time.time()),
+	"/assets/keytech_theme/js/language_switcher.js?v={}".format(time.time()),
+]
 
 # include js, css files in header of web template
 web_include_css = "/assets/keytech_theme/css/keytech_theme.css?v={}".format(time.time())

@@ -1,0 +1,26 @@
+.language-submenu {
+    list-style: none;
+    padding: 0.25rem 0;
+}
+
+.language-submenu .dropdown-item {
+    padding: 0.4rem 1rem;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
+.language-submenu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+.language-submenu .dropdown-item.active {
+    background-color: var(--primary-color, #0089ff);
+    color: #fff;
+}
+
+.language-submenu .dropdown-item.active:hover {
+    background-color: var(--primary-color, #0089ff);
+    color: #fff;
+}
