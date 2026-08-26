@@ -1,0 +1,316 @@
+/*
+ * Keytech Theme - Desk Color Overrides
+ *
+ * Uses --bt-* CSS custom properties set by keytech_theme_desk_theme.js.
+ * Only active when data-theme-mode is NOT "dark".
+ * In dark mode the JS clears all --bt-* vars → Frappe dark.scss takes over.
+ *
+ * IMPORTANT: No !important on color rules so that when a variable is NOT set,
+ * the declaration is invalid and Frappe defaults take over naturally.
+ */
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+	background-color: var(--bt-navbar-bg);
+}
+
+.navbar.container,
+.navbar-brand,
+#navbar-breadcrumbs li a,
+#navbar-breadcrumbs li.disabled a,
+.btn-reset.nav-link span {
+	color: var(--bt-navbar-color);
+}
+
+.navbar-toggler,
+.navbar-toggler span svg,
+.navbar svg.es-icon.icon-sm use {
+	fill: var(--bt-navbar-color);
+	stroke-width: 0;
+}
+
+button.navbar-toggler {
+	border-color: var(--bt-navbar-color);
+}
+
+.btn-reset.nav-link span svg,
+.btn-reset.nav-link span svg use {
+	stroke: var(--bt-navbar-color);
+	fill: var(--bt-navbar-color);
+}
+
+/* Global search bar text */
+.input-group.search-bar .form-control,
+.input-group.search-bar input,
+.awesomplete input,
+.navbar .search-bar input {
+	color: var(--bt-navbar-color);
+}
+
+.navbar .search-bar .icon {
+	color: var(--bt-navbar-color);
+}
+
+/* ========================================
+   BODY & CARDS
+   ======================================== */
+
+body {
+	background-color: var(--bt-body-bg);
+}
+
+.content.page-container,
+.page-head {
+	background-color: var(--bt-body-bg);
+}
+
+.layout-main-section,
+.form-layout,
+.layout-main,
+.form-page,
+.nav.form-tabs,
+.row.form-section.card-section.visible-section {
+	background-color: var(--bt-card-bg);
+	color: var(--bt-text-color);
+}
+
+.page-card-head h4 {
+	color: var(--bt-heading-color);
+}
+
+/* ========================================
+   SIDEBAR (Frappe default sidebar)
+   ======================================== */
+
+.body-sidebar {
+	background-color: var(--bt-sidebar-bg) !important;
+	color: var(--bt-sidebar-color) !important;
+}
+
+.standard-sidebar-item,
+.item-anchor,
+.sidebar-item-label,
+.sidebar-item-icon,
+.sidebar-item-icon svg,
+.sidebar-item-control button {
+	color: var(--bt-sidebar-color) !important;
+}
+
+.sidebar-item-icon svg {
+	fill: var(--bt-sidebar-bg) !important;
+	stroke: var(--bt-sidebar-color) !important;
+}
+
+/* Active sidebar item (Frappe default) */
+.standard-sidebar-item.active > .item-anchor,
+.sidebar-item.active > .item-anchor {
+	background-color: var(--bt-sidebar-active-bg) !important;
+	color: var(--bt-sidebar-active-color) !important;
+}
+
+/* Sidebar menu icons */
+.sidebar-item-icon,
+.standard-sidebar-item .sidebar-item-icon svg,
+.sidebar-item-icon svg {
+	color: var(--bt-sidebar-color) !important;
+	fill: none !important;
+	stroke: var(--bt-sidebar-color) !important;
+}
+
+/* Sidebar section headings */
+.sidebar-label,
+.sidebar-menu-label {
+	color: var(--bt-sidebar-color) !important;
+}
+
+/* Sidebar footer user area */
+.sidebar-user .avatar,
+.sidebar-user-avatar {
+	border-color: var(--bt-sidebar-color) !important;
+}
+
+.sidebar-footer,
+.body-sidebar .sidebar-footer {
+	background-color: var(--bt-sidebar-bg) !important;
+}
+
+.sidebar-footer .sidebar-user-name,
+.sidebar-footer .user-information {
+	color: var(--bt-sidebar-color) !important;
+}
+
+/* Sidebar collapse/expand toggle */
+.sidebar-sidebar-toggle-icon,
+.collapse-sidebar-link {
+	color: var(--bt-sidebar-color) !important;
+}
+
+/* ========================================
+   SIDEBAR (Keytech custom #kt-sidebar)
+   ======================================== */
+
+#kt-sidebar {
+	background: var(--bt-sidebar-bg) !important;
+}
+
+#kt-sidebar .kt-sidebar-link {
+	color: var(--bt-sidebar-color) !important;
+}
+
+#kt-sidebar .kt-sidebar-item.active > .kt-sidebar-link {
+	background: var(--bt-sidebar-active-bg) !important;
+	color: var(--bt-sidebar-active-color) !important;
+}
+
+#kt-sidebar .kt-sidebar-item.active > .kt-sidebar-link::before {
+	background: var(--bt-primary) !important;
+}
+
+#kt-sidebar .kt-sidebar-badge {
+	background: var(--bt-primary) !important;
+}
+
+/* Sidebar icons color */
+#kt-sidebar .kt-sidebar-icon,
+#kt-sidebar .kt-sidebar-icon i {
+	color: var(--bt-sidebar-color) !important;
+}
+
+/* Sidebar chevron */
+#kt-sidebar .kt-sidebar-chevron {
+	color: var(--bt-sidebar-color);
+}
+
+/* Sidebar footer user name */
+#kt-sidebar .kt-sidebar-user-name {
+	color: var(--bt-sidebar-color);
+}
+
+/* Sidebar footer border */
+#kt-sidebar .kt-sidebar-footer {
+	border-top-color: var(--bt-sidebar-color);
+}
+
+/* ========================================
+   BUTTONS – PRIMARY (NO !important)
+   ======================================== */
+
+.btn-primary,
+.btn-primary:active {
+	background-color: var(--bt-btn-primary-bg);
+}
+
+.btn-primary span,
+.btn-primary:active span {
+	color: var(--bt-btn-primary-color);
+}
+
+.btn-primary:hover {
+	background-color: var(--bt-btn-primary-hover-bg);
+}
+
+.btn-primary:hover span {
+	color: var(--bt-btn-primary-hover-color);
+}
+
+/* ========================================
+   BUTTONS – SECONDARY (NO !important)
+   ======================================== */
+
+.btn.btn-default.ellipsis,
+.btn-default,
+.btn-default:active {
+	background-color: var(--bt-btn-secondary-bg);
+	color: var(--bt-btn-secondary-color);
+}
+
+.btn.btn-default.ellipsis:hover,
+.btn-default:hover {
+	background-color: var(--bt-btn-secondary-hover-bg);
+	color: var(--bt-btn-secondary-hover-color);
+}
+
+/* ========================================
+   TABLES
+   ======================================== */
+
+.level.list-row-head.text-muted {
+	background-color: var(--bt-table-head-bg);
+}
+
+.level-left.list-header-subject,
+span.level-item,
+div.level-right {
+	color: var(--bt-table-head-color);
+}
+
+.level.list-row,
+.level-item.bold.ellipsis a,
+.filterable.ellipsis {
+	background-color: var(--bt-table-body-bg);
+	color: var(--bt-table-body-color);
+}
+
+/* ========================================
+   WIDGETS / NUMBER CARDS
+   ======================================== */
+
+.widget.number-widget-box,
+.widget.dashboard-widget-box {
+	background-color: var(--bt-widget-bg);
+	border-color: var(--bt-number-card-border);
+}
+
+.widget-head,
+.widget-label,
+.widget-title,
+.widget-body,
+.widget-content div.number {
+	color: var(--bt-widget-color);
+}
+
+/* ========================================
+   INPUTS (NO !important)
+   ======================================== */
+
+.form-control {
+	background-color: var(--bt-input-bg);
+	color: var(--bt-input-color);
+	border-color: var(--bt-input-border);
+}
+
+label.control-label {
+	color: var(--bt-input-label-color);
+}
+
+/* ========================================
+   TOGGLES (need !important to override display:none)
+   ======================================== */
+
+/* Hide help button */
+.d-lg-block,
+.d-sm-block {
+	display: var(--bt-hide-help, block) !important;
+}
+
+/* Hide app switcher */
+.sidebar-item-control {
+	display: var(--bt-hide-app-switcher, flex) !important;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+	.desk-footer {
+		margin-left: 0;
+	}
+
+	.desk-footer.sticky {
+		left: 0;
+	}
+}
