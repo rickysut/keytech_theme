@@ -623,12 +623,12 @@ label.control-label { color: var(--bt-input-label-color) !important; }
 }
 
 .btn-primary.btn-login, .btn-primary.btn-forgot {
-    background-color: var(--bt-login-btn-bg, #171717);
-    color: var(--bt-login-btn-color, #fff);
+    background-color: var(--bt-login-btn-bg, #171717) !important;
+    color: var(--bt-login-btn-color, #fff) !important;
 }
 .btn-primary.btn-login:hover, .btn-primary.btn-forgot:hover {
-    background-color: var(--bt-login-btn-hover-bg, #171717);
-    color: var(--bt-login-btn-hover-color, #fff);
+    background-color: var(--bt-login-btn-hover-bg, #171717) !important;
+    color: var(--bt-login-btn-hover-color, #fff) !important;
 }
 
 .for-login, .for-signup, .for-forgot, .for-login-with-email-link {
