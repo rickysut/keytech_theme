@@ -453,8 +453,17 @@ class KeytechDeskTheme {
 
 	applyDarkMode() {
 		var root = document.documentElement;
-		// Keep primary button visible — CSS rule uses --bt-btn-primary-bg with !important
+		// Match Frappe dark mode defaults — CSS rules use --bt-* with !important
 		root.style.setProperty("--bt-btn-primary-bg", "var(--gray-300)");
+		root.style.setProperty("--bt-btn-primary-color", "var(--neutral)");
+		root.style.setProperty("--bt-btn-primary-hover-bg", "var(--gray-400)");
+		root.style.setProperty("--bt-btn-primary-hover-color", "var(--neutral)");
+		root.style.setProperty("--bt-btn-primary-border", "transparent");
+		root.style.setProperty("--bt-btn-secondary-bg", "var(--gray-800)");
+		root.style.setProperty("--bt-btn-secondary-color", "var(--text-color)");
+		root.style.setProperty("--bt-btn-secondary-hover-bg", "var(--gray-700)");
+		root.style.setProperty("--bt-btn-secondary-hover-color", "var(--text-color)");
+		root.style.setProperty("--bt-btn-secondary-border", "transparent");
 	}
 
 	clearCSSVariables() {
