@@ -551,6 +551,46 @@ label.control-label { color: var(--bt-input-label-color) !important; }
 /* TABLE OPTIONS */
 .like-icon, .comment-count, .level-item.list-row-activity .mx-2 { display: var(--bt-hide-like-comment, block) !important; }
 
+/* STATUS INDICATOR BADGES - preserve Frappe default colors
+   Must use !important to override the broad table color rules above */
+.indicator-pill,
+.indicator-pill-right {
+	background: var(--bg-green) !important;
+	color: var(--text-on-green) !important;
+}
+.indicator-pill::before,
+.indicator-pill::after,
+.indicator-pill-right::before,
+.indicator-pill-right::after {
+	background: var(--text-on-green) !important;
+}
+.indicator-pill.green, .indicator-pill-right.green { background: var(--bg-green) !important; color: var(--text-on-green) !important; }
+.indicator-pill.green::before, .indicator-pill.green::after, .indicator-pill-right.green::before, .indicator-pill-right.green::after { background: var(--text-on-green) !important; }
+.indicator-pill.cyan, .indicator-pill-right.cyan { background: var(--bg-cyan) !important; color: var(--text-on-cyan) !important; }
+.indicator-pill.cyan::before, .indicator-pill.cyan::after, .indicator-pill-right.cyan::before, .indicator-pill-right.cyan::after { background: var(--text-on-cyan) !important; }
+.indicator-pill.blue, .indicator-pill-right.blue { background: var(--bg-blue) !important; color: var(--text-on-blue) !important; }
+.indicator-pill.blue::before, .indicator-pill.blue::after, .indicator-pill-right.blue::before, .indicator-pill-right.blue::after { background: var(--text-on-blue) !important; }
+.indicator-pill.orange, .indicator-pill-right.orange { background: var(--bg-orange) !important; color: var(--text-on-orange) !important; }
+.indicator-pill.orange::before, .indicator-pill.orange::after, .indicator-pill-right.orange::before, .indicator-pill-right.orange::after { background: var(--text-on-orange) !important; }
+.indicator-pill.yellow, .indicator-pill-right.yellow { background: var(--bg-yellow) !important; color: var(--text-on-yellow) !important; }
+.indicator-pill.yellow::before, .indicator-pill.yellow::after, .indicator-pill-right.yellow::before, .indicator-pill-right.yellow::after { background: var(--text-on-yellow) !important; }
+.indicator-pill.gray, .indicator-pill-right.gray { background: var(--bg-gray) !important; color: var(--text-on-gray) !important; }
+.indicator-pill.gray::before, .indicator-pill.gray::after, .indicator-pill-right.gray::before, .indicator-pill-right.gray::after { background: var(--text-on-gray) !important; }
+.indicator-pill.grey, .indicator-pill-right.grey { background: var(--bg-grey) !important; color: var(--text-on-grey) !important; }
+.indicator-pill.grey::before, .indicator-pill.grey::after, .indicator-pill-right.grey::before, .indicator-pill-right.grey::after { background: var(--text-on-grey) !important; }
+.indicator-pill.red, .indicator-pill-right.red { background: var(--bg-red) !important; color: var(--text-on-red) !important; }
+.indicator-pill.red::before, .indicator-pill.red::after, .indicator-pill-right.red::before, .indicator-pill-right.red::after { background: var(--text-on-red) !important; }
+.indicator-pill.pink, .indicator-pill-right.pink { background: var(--bg-pink) !important; color: var(--text-on-pink) !important; }
+.indicator-pill.pink::before, .indicator-pill.pink::after, .indicator-pill-right.pink::before, .indicator-pill-right.pink::after { background: var(--text-on-pink) !important; }
+.indicator-pill.darkgrey, .indicator-pill-right.darkgrey { background: var(--bg-darkgrey) !important; color: var(--text-on-darkgrey) !important; }
+.indicator-pill.darkgrey::before, .indicator-pill.darkgrey::after, .indicator-pill-right.darkgrey::before, .indicator-pill-right.darkgrey::after { background: var(--text-on-darkgrey) !important; }
+.indicator-pill.purple, .indicator-pill-right.purple { background: var(--bg-purple) !important; color: var(--text-on-purple) !important; }
+.indicator-pill.purple::before, .indicator-pill.purple::after, .indicator-pill-right.purple::before, .indicator-pill-right.purple::after { background: var(--text-on-purple) !important; }
+.indicator-pill.light-blue, .indicator-pill-right.light-blue { background: var(--bg-light-blue) !important; color: var(--text-on-light-blue) !important; }
+.indicator-pill.light-blue::before, .indicator-pill.light-blue::after, .indicator-pill-right.light-blue::before, .indicator-pill-right.light-blue::after { background: var(--text-on-light-blue) !important; }
+.indicator-pill.black, .indicator-pill-right.black { background: var(--bg-dark) !important; color: var(--text-on-dark) !important; }
+.indicator-pill.black::before, .indicator-pill.black::after, .indicator-pill-right.black::before, .indicator-pill-right.black::after { background: var(--text-on-dark) !important; }
+
 /* BUTTON BORDERS */
 .btn-primary, .btn-primary:active { border: 1px solid var(--bt-btn-primary-border, transparent) !important; }
 .btn.btn-default.ellipsis, .btn-default, .btn-default:active { border: 1px solid var(--bt-btn-secondary-border, transparent) !important; }
