@@ -696,6 +696,18 @@ label.control-label { color: var(--bt-input-label-color) !important; }
 }
 
 /* ========================================
+   DARK MODE OVERRIDES
+   ======================================== */
+[data-theme-mode="dark"] .navbar {
+    background-color: var(--gray-900) !important;
+}
+[data-theme-mode="dark"] .btn-primary,
+[data-theme-mode="dark"] .btn-primary:active {
+    color: var(--gray-300) !important;
+    border: 1px solid var(--gray-700) !important;
+}
+
+/* ========================================
    FOOTER
    ======================================== */
 .desk-footer {
