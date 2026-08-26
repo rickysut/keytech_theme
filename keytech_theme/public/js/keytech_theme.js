@@ -442,12 +442,22 @@ class KeytechDeskTheme {
 		var mode = document.documentElement.getAttribute("data-theme-mode");
 		if (mode === "dark") {
 			this.clearCSSVariables();
+			this.applyDarkMode();
 			return;
 		}
 		this.clearCSSVariables();
 		this.setCSSVariables();
 		this.applyLoginPage();
 		this.applyFooter();
+	}
+
+	applyDarkMode() {
+		var root = document.documentElement;
+		var t = this.themeData;
+		if (!t) return;
+		var set = function (prop, val) { if (val) root.style.setProperty(prop, val); };
+		set("--bt-btn-primary-color", t.btn_primary_text_color);
+		set("--bt-btn-primary-hover-color", t.btn_primary_hover_text_color);
 	}
 
 	clearCSSVariables() {
