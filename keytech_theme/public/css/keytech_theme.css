@@ -445,7 +445,8 @@ button.navbar-toggler { border-color: var(--bt-navbar-color) !important; }
 
 /* BODY & CARDS */
 body { background-color: var(--bt-body-bg) !important; }
-.content.page-container, .page-head { background-color: var(--bt-body-bg) !important; }
+.content.page-container { background-color: var(--bt-body-bg) !important; }
+.page-head { background-color: var(--bt-card-bg, #fff) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important; }
 .layout-main-section, .form-layout, .layout-main, .form-page,
 .nav.form-tabs, .row.form-section.card-section.visible-section {
     background-color: var(--bt-card-bg) !important; color: var(--bt-text-color) !important;
@@ -456,6 +457,7 @@ body { background-color: var(--bt-body-bg) !important; }
 /* FORM TABS */
 .nav.form-tabs .nav-item + .nav-item { border-left: 1px solid var(--border-color, #dee2e6) !important; }
 .nav.form-tabs .nav-link.active { border-bottom: 3px solid var(--bt-btn-primary-bg, #171717) !important; }
+.nav.form-tabs.sticky-up, .nav.form-tabs.sticky-down { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important; }
 
 /* SIDEBAR - Frappe default */
 .body-sidebar { background-color: var(--bt-sidebar-bg) !important; color: var(--bt-sidebar-color) !important; }
@@ -701,6 +703,14 @@ label.control-label { color: var(--bt-input-label-color) !important; }
    ======================================== */
 [data-theme-mode="dark"] .navbar {
     background-color: var(--gray-900) !important;
+}
+[data-theme-mode="dark"] .page-head {
+    background-color: var(--gray-900) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+[data-theme-mode="dark"] .nav.form-tabs.sticky-up,
+[data-theme-mode="dark"] .nav.form-tabs.sticky-down {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* ========================================

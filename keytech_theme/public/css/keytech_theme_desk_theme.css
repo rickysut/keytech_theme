@@ -62,9 +62,13 @@ body {
 	background-color: var(--bt-body-bg);
 }
 
-.content.page-container,
-.page-head {
+.content.page-container {
 	background-color: var(--bt-body-bg);
+}
+
+.page-head {
+	background-color: var(--bt-card-bg);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .layout-main-section,
@@ -75,6 +79,11 @@ body {
 .row.form-section.card-section.visible-section {
 	background-color: var(--bt-card-bg);
 	color: var(--bt-text-color);
+}
+
+.nav.form-tabs.sticky-up,
+.nav.form-tabs.sticky-down {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .page-card-head h4 {
