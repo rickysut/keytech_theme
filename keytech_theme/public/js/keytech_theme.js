@@ -141,7 +141,11 @@ keytech_theme = {
 		$link.append($("<span>").addClass("kt-sidebar-label").text(node.menu_label || node.name));
 
 		if (node.badge) {
-			$link.append($("<span>").addClass("kt-sidebar-badge").text(node.badge));
+			const $badge = $("<span>").addClass("kt-sidebar-badge").text(node.badge);
+			if (node.badge_color) {
+				$badge.css("color", node.badge_color);
+			}
+			$link.append($badge);
 		}
 
 		$li.append($link);
@@ -505,6 +509,7 @@ class KeytechDeskTheme {
 		set("--bt-sidebar-color", t.sidebar_text_color);
 		set("--bt-sidebar-active-bg", t.sidebar_active_bg_color);
 		set("--bt-sidebar-active-color", t.sidebar_active_text_color);
+		set("--bt-sidebar-badge-color", t.badge_color);
 
 		// Buttons - Primary
 		set("--bt-btn-primary-bg", t.btn_primary_bg_color);

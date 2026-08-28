@@ -194,6 +194,7 @@ class KeytechDeskTheme {
 		set("--bt-sidebar-color", t.sidebar_text_color);
 		set("--bt-sidebar-active-bg", t.sidebar_active_bg_color);
 		set("--bt-sidebar-active-color", t.sidebar_active_text_color);
+		set("--bt-sidebar-badge-color", t.badge_color);
 		set("--bt-btn-primary-bg", t.btn_primary_bg_color);
 		set("--bt-btn-primary-color", t.btn_primary_text_color);
 		set("--bt-btn-primary-hover-bg", t.btn_primary_hover_bg_color);

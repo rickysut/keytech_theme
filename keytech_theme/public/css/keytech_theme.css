@@ -228,7 +228,6 @@ body.kt-sidebar-collapsed #kt-sidebar .kt-sidebar-badge {
     padding: 0 6px !important;
     border-radius: 10px !important;
     background: var(--bg-blue) !important;
-    color: var(--text-on-blue) !important;
     font-size: 11px !important;
     font-weight: 600 !important;
     line-height: 1 !important;
@@ -247,7 +246,14 @@ body.kt-sidebar-collapsed #kt-sidebar .kt-sidebar-badge {
     height: 16px !important;
     flex-shrink: 0 !important;
     transition: transform 0.2s !important;
-    color: var(--text-muted) !important;
+    color: inherit !important;
+}
+
+#kt-sidebar .kt-sidebar-chevron svg,
+#kt-sidebar .kt-sidebar-chevron svg use {
+    color: inherit !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
 }
 
 #kt-sidebar .kt-sidebar-group.expanded > .kt-sidebar-link .kt-sidebar-chevron {
@@ -293,7 +299,7 @@ body.kt-sidebar-collapsed #kt-sidebar .kt-sidebar-badge {
    ============================ */
 
 #kt-sidebar .kt-sidebar-footer {
-    border-top: 1px solid var(--border-color) !important;
+    border-top: none !important;
     padding: 8px 12px !important;
     flex-shrink: 0 !important;
     display: flex !important;
@@ -483,16 +489,16 @@ body { background-color: var(--bt-body-bg) !important; }
     background: var(--bt-sidebar-active-bg) !important; color: var(--bt-sidebar-active-color) !important;
 }
 #kt-sidebar .kt-sidebar-item.active > .kt-sidebar-link::before { background: var(--bt-primary) !important; }
-#kt-sidebar .kt-sidebar-badge { background: var(--bt-primary) !important; }
+#kt-sidebar .kt-sidebar-badge { background: var(--bt-primary) !important; color: var(--bt-sidebar-badge-color, #fff) !important; }
 #kt-sidebar .kt-sidebar-icon, #kt-sidebar .kt-sidebar-icon i,
 #kt-sidebar .kt-sidebar-icon svg, #kt-sidebar .kt-sidebar-icon svg use {
     color: var(--bt-sidebar-color) !important;
     fill: var(--bt-sidebar-color) !important;
     stroke: var(--bt-sidebar-color) !important;
 }
-#kt-sidebar .kt-sidebar-chevron { color: var(--bt-sidebar-color) !important; }
+#kt-sidebar .kt-sidebar-chevron { color: inherit !important; }
 #kt-sidebar .kt-sidebar-user-name { color: var(--bt-sidebar-color) !important; }
-#kt-sidebar .kt-sidebar-footer { border-top-color: var(--bt-sidebar-color) !important; }
+#kt-sidebar .kt-sidebar-footer { border-top: none !important; }
 
 /* BUTTONS - PRIMARY */
 .btn-primary, .btn-primary:active { background-color: var(--bt-btn-primary-bg) !important; }

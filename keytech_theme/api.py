@@ -25,6 +25,7 @@ def get_sidebar_menu():
 			"is_group",
 			"sort_order",
 			"badge",
+			"badge_color",
 		],
 		order_by="lft asc",
 	)

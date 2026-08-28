@@ -118,14 +118,20 @@
    "in_list_view": 1,
    "label": "Is Visible"
   },
-  {
-   "description": "Auto-filled with record count for Link actions",
-   "fieldname": "badge",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Badge",
-   "read_only": 1
-  }
+   {
+    "description": "Auto-filled with record count for Link actions",
+    "fieldname": "badge",
+    "fieldtype": "Data",
+    "hidden": 1,
+    "label": "Badge",
+    "read_only": 1
+   },
+   {
+    "fieldname": "badge_color",
+    "fieldtype": "Color",
+    "label": "Badge Color",
+    "default": "#FFFFFF"
+   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,

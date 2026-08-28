@@ -190,7 +190,13 @@ body {
 
 /* Sidebar chevron */
 #kt-sidebar .kt-sidebar-chevron {
-	color: var(--bt-sidebar-color);
+	color: inherit !important;
+}
+#kt-sidebar .kt-sidebar-chevron svg,
+#kt-sidebar .kt-sidebar-chevron svg use {
+	color: inherit !important;
+	fill: currentColor !important;
+	stroke: currentColor !important;
 }
 
 /* Sidebar footer user name */
@@ -200,7 +206,7 @@ body {
 
 /* Sidebar footer border */
 #kt-sidebar .kt-sidebar-footer {
-	border-top-color: var(--bt-sidebar-color);
+	border-top: none !important;
 }
 
 /* ========================================
