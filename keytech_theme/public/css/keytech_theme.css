@@ -554,16 +554,17 @@ label.control-label { color: var(--bt-input-label-color) !important; }
 .like-icon, .comment-count, .level-item.list-row-activity .mx-2 { display: var(--bt-hide-like-comment, block) !important; }
 
 /* STATUS INDICATOR BADGES - preserve Frappe default colors
-   Must use !important to override the broad table color rules above */
-.indicator-pill,
-.indicator-pill-right {
+   Must use !important to override the broad table color rules above
+   Only apply base green to pills that have a color class (not empty pills) */
+.indicator-pill:is(.green, .cyan, .blue, .orange, .yellow, .gray, .grey, .red, .pink, .darkgrey, .purple, .light-blue, .black),
+.indicator-pill-right:is(.green, .cyan, .blue, .orange, .yellow, .gray, .grey, .red, .pink, .darkgrey, .purple, .light-blue, .black) {
 	background: var(--bg-green) !important;
 	color: var(--text-on-green) !important;
 }
-.indicator-pill::before,
-.indicator-pill::after,
-.indicator-pill-right::before,
-.indicator-pill-right::after {
+.indicator-pill:is(.green, .cyan, .blue, .orange, .yellow, .gray, .grey, .red, .pink, .darkgrey, .purple, .light-blue, .black)::before,
+.indicator-pill:is(.green, .cyan, .blue, .orange, .yellow, .gray, .grey, .red, .pink, .darkgrey, .purple, .light-blue, .black)::after,
+.indicator-pill-right:is(.green, .cyan, .blue, .orange, .yellow, .gray, .grey, .red, .pink, .darkgrey, .purple, .light-blue, .black)::before,
+.indicator-pill-right:is(.green, .cyan, .blue, .orange, .yellow, .gray, .grey, .red, .pink, .darkgrey, .purple, .light-blue, .black)::after {
 	background: var(--text-on-green) !important;
 }
 .indicator-pill.green, .indicator-pill-right.green { background: var(--bg-green) !important; color: var(--text-on-green) !important; }
